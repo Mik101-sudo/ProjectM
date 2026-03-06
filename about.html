@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About Mandfar Group — Our Story, Leadership & Vision</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+.team-photo-placeholder{background:linear-gradient(135deg,var(--teal) 0%,#010d06 100%);}
+.team-photo-md{background:linear-gradient(135deg,#003B49 0%,#00AF66 100%);}
+.team-photo-coo{background:linear-gradient(135deg,#1a0600 0%,#3d1200 100%);}
+.team-photo-bd{background:linear-gradient(135deg,#000d1a 0%,#001f3d 100%);}
+.team-photo-hcd{background:linear-gradient(135deg,#0a1a00 0%,#1a3010 100%);}
+.team-photo-com{background:linear-gradient(135deg,#1a0a00 0%,#3d2000 100%);}
+.team-photo-qaqc{background:linear-gradient(135deg,#00100a 0%,#002a1a 100%);}
+.mission-vision{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:48px;}
+.mv-card{border-radius:var(--radius-lg);padding:48px 40px;position:relative;overflow:hidden;}
+.mv-card-mission{background:linear-gradient(135deg,var(--teal) 0%,#002010 100%);border:1px solid var(--border-color);}
+.mv-card-vision{background:linear-gradient(135deg,#0a0500 0%,#1a0a00 100%);border:1px solid rgba(245,166,35,.15);}
+.mv-card::before{content:'';position:absolute;top:-40px;right:-40px;width:160px;height:160px;border-radius:50%;background:rgba(255,255,255,.03);}
+.mv-label{font-size:.72rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;margin-bottom:12px;}
+.mv-card-mission .mv-label{color:var(--green);}
+.mv-card-vision .mv-label{color:var(--gold);}
+.mv-title{font-size:1.5rem;font-weight:900;letter-spacing:-.02em;text-transform:uppercase;margin-bottom:16px;line-height:1.1;}
+.mv-text{font-size:.9rem;font-weight:300;color:rgba(255,255,255,.6);line-height:1.8;}
+.about-timeline-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+@media(max-width:900px){.mission-vision{grid-template-columns:1fr;}.about-timeline-wrap{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div id="page-loader"><img src="assets/mainlogo.png" alt="Mandfar Group" class="loader-logo"><div class="loader-bar-wrap"><div class="loader-bar"></div></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo"><img src="assets/mainlogo.png" alt="Mandfar Group"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="nav-active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li class="nav-dropdown">
+      <a href="#">Divisions <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+      <div class="dropdown-menu">
+        <a href="mining.html"><span class="dropdown-dot" style="background:var(--gold)"></span>Contract Mining</a>
+        <a href="construction.html"><span class="dropdown-dot" style="background:var(--orange)"></span>Construction &amp; Civils</a>
+        <a href="electro-mechanical.html"><span class="dropdown-dot" style="background:var(--blue)"></span>Electro-Mechanical</a>
+      </div>
+    </li>
+    <li><a href="sheq.html">SHEQ</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta"><a href="contact.html" class="btn-nav">Get In Touch</a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="mining.html">Contract Mining</a><a href="construction.html">Construction</a>
+  <a href="electro-mechanical.html">Electro-Mechanical</a><a href="sheq.html">SHEQ</a><a href="contact.html">Contact</a>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero">
+  <div class="page-hero-bg about-hero-bg"></div>
+  <div class="page-hero-overlay"></div>
+  <canvas id="hero-canvas"></canvas>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb">Home <span>About Us</span></div>
+    <h1>About<br><span style="color:var(--green)">Mandfar</span><br>Group</h1>
+    <p class="page-hero-sub">Built on integrity, driven by excellence — Southern Africa's trusted mining services partner.</p>
+  </div>
+</div>
+
+<!-- Mission & Vision -->
+<section class="section" style="background:var(--dark-2);">
+  <div class="section-inner">
+    <p class="section-label reveal">Our Foundation</p>
+    <h2 class="section-title reveal delay-1">Mission &amp; <span class="accent">Vision</span></h2>
+    <div class="mission-vision">
+      <div class="mv-card mv-card-mission reveal delay-1">
+        <div class="mv-label">Our Mission</div>
+        <div class="mv-title">Delivering Mining Solutions That Last</div>
+        <p class="mv-text">To provide integrated, safe, and sustainable mining services that unlock the potential of mineral resources across Southern Africa — through technical excellence, disciplined project execution, and a people-first culture that builds lasting value for our clients, communities, and employees.</p>
+      </div>
+      <div class="mv-card mv-card-vision reveal delay-2">
+        <div class="mv-label" style="color:var(--gold)">Our Vision</div>
+        <div class="mv-title">Africa's Premier Mining Services Partner</div>
+        <p class="mv-text">To be the most trusted and capable mining services group in Africa — recognised for operational excellence, innovation, and an unwavering commitment to safety, quality, and environmental stewardship across every project we undertake.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Story / Timeline -->
+<section class="section" style="background:var(--dark);">
+  <div class="section-inner">
+    <div class="about-timeline-wrap">
+      <div>
+        <p class="section-label reveal">Our Journey</p>
+        <h2 class="section-title reveal delay-1">Built For <span class="accent">Excellence</span></h2>
+        <p class="section-sub reveal delay-2">From humble beginnings to a multi-division group serving the continent's most demanding mining operations.</p>
+        <div style="margin-top:40px;" class="reveal delay-3">
+          <a href="contact.html" class="btn-primary">Partner With Us <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+      <div class="timeline reveal-right">
+        <div class="timeline-item">
+          <div class="timeline-year">Foundation</div>
+          <div class="timeline-title">Established as a Mining Services Provider</div>
+          <div class="timeline-desc">Mandfar Group was established with a clear mandate: deliver integrated, world-class mining services across Southern Africa with integrity and technical excellence.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Early Growth</div>
+          <div class="timeline-title">Expansion into Construction &amp; Civils</div>
+          <div class="timeline-desc">Recognising the synergies between mining and infrastructure, the Group launched Mandfar Construction, extending capabilities into earthworks, roads and civils.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Diversification</div>
+          <div class="timeline-title">Electro-Mechanical &amp; Energy Division Launched</div>
+          <div class="timeline-desc">Mandfar Electro was established to address growing demand for power infrastructure and engineering solutions in the mining sector, including solar PV and substations.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">ISO Certification</div>
+          <div class="timeline-title">Triple ISO Certification Achieved</div>
+          <div class="timeline-desc">Mandfar Group achieved ISO 9001, ISO 14001, and ISO 45001 certifications, cementing its position as a world-class, compliant mining services partner.</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-year">Today</div>
+          <div class="timeline-title">Delivering Across Southern Africa</div>
+          <div class="timeline-desc">With 500+ skilled professionals, a strong asset base, and proven project delivery across gold, lithium, chrome and energy sectors, Mandfar Group continues to grow.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section class="section" style="background:var(--dark-2);">
+  <div class="section-inner">
+    <p class="section-label reveal">What Drives Us</p>
+    <h2 class="section-title reveal delay-1">Our Core <span class="accent">Values</span></h2>
+    <div class="values-grid" style="margin-top:48px;">
+      <div class="value-card reveal delay-1">
+        <div class="value-icon"><i class="fa-solid fa-shield" style="color: #00af66;"></i></div>
+        <div class="value-title">Safety First</div>
+        <p class="value-desc">Zero compromise on the safety and wellbeing of our people, clients, and communities. Every decision starts with safety.</p>
+      </div>
+      <div class="value-card reveal delay-2">
+        <div class="value-icon"><i class="fa-solid fa-star" style="color: #00af66;"></i></div>
+        <div class="value-title">Operational Excellence</div>
+        <p class="value-desc">We deliver results through disciplined project management, technical expertise, and a relentless focus on quality at every level.</p>
+      </div>
+      <div class="value-card reveal delay-3">
+        <div class="value-icon"><i class="fa-solid fa-hands-helping" style="color: #00af66;"></i></div>
+        <div class="value-title">Integrity</div>
+        <p class="value-desc">We build lasting partnerships through transparency, accountability, and delivering on our commitments — every time.</p>
+      </div>
+      <div class="value-card reveal delay-4">
+        <div class="value-icon"><i class="fa-solid fa-lightbulb" style="color: #00af66;"></i></div>
+        <div class="value-title">Innovation</div>
+        <p class="value-desc">We continuously seek better ways to solve complex mining challenges through technology, process improvement and creative thinking.</p>
+      </div>
+      <div class="value-card reveal delay-1">
+        <div class="value-icon"><i class="fa-solid fa-leaf" style="color: #00af66;"></i></div>
+        <div class="value-title">Sustainability</div>
+        <p class="value-desc">We are committed to responsible mining practices that protect the environment and create lasting value for local communities.</p>
+      </div>
+      <div class="value-card reveal delay-2">
+        <div class="value-icon"><i class="fa-solid fa-users" style="color: #00af66;"></i></div>
+        <div class="value-title">People Development</div>
+        <p class="value-desc">Our people are our greatest asset. We invest in training, development, and creating careers that make a real difference.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Leadership -->
+<section class="section" style="background:var(--dark);">
+  <div class="section-inner">
+    <p class="section-label reveal">Our People</p>
+    <h2 class="section-title reveal delay-1">Leadership <span class="accent">Team</span></h2>
+    <p class="section-sub reveal delay-2">Experienced executives driving Mandfar Group's vision with decades of mining and infrastructure expertise.</p>
+    <div class="team-grid">
+      <div class="team-card reveal delay-1">
+        <div class="team-card-photo">
+          <div class="team-card-photo-bg team-photo-md" style="background-image: url(assets/Winnie\ Manduku.jpg);background-position: center;background-size: cover;">
+            <div class="team-initial">MD</div>
+          </div>
+          <div class="team-card-photo-overlay"></div>
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Managing Director</div>
+          <div class="team-card-role">Executive Leadership</div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-2">
+        <div class="team-card-photo">
+          <div class="team-card-photo-bg team-photo-coo" style="background-image: url(assets/Ruvimbo\ Muskwe-Chief\ Operations\ Officer.jpg);background-position: center;background-size: cover;">
+            <div class="team-initial">COO</div>
+          </div>
+          <div class="team-card-photo-overlay"></div>
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Chief Operating Officer</div>
+          <div class="team-card-role">Operations &amp; Delivery</div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-3">
+        <div class="team-card-photo">
+          <div class="team-card-photo-bg team-photo-bd" style="background-image: url(assets/Frances-Clare\ Chikwanha.jpg);background-position: center;background-size: cover;">
+            <div class="team-initial">BD</div>
+          </div>
+          <div class="team-card-photo-overlay"></div>
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Business Development Head</div>
+          <div class="team-card-role">Growth &amp; Strategy</div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-4">
+        <div class="team-card-photo">
+          <div class="team-card-photo-bg team-photo-hcd" style="background-image: url(assets/SimbarasheT\ MakumbeHeadofHumanCapitalDevelopmentandAdministration.jpg);background-position: center;background-size: cover;">
+            <div class="team-initial">HCD</div>
+          </div>
+          <div class="team-card-photo-overlay"></div>
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Head of HCD</div>
+          <div class="team-card-role">Human Capital Development</div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-1">
+        <div class="team-card-photo">
+          <div class="team-card-photo-bg team-photo-com" style="background-image: url(assets/Tamuka\ Mutiti-Head\ of\ Operations.jpg);background-position: center;background-size: cover;">
+            <div class="team-initial">HC</div>
+          </div>
+          <div class="team-card-photo-overlay"></div>
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Head of Commercial &amp; Operations</div>
+          <div class="team-card-role">Commercial Strategy</div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-2">
+        <div class="team-card-photo">
+          <div class="team-card-photo-bg team-photo-qaqc" style="background-image: url(assets/Gerald\ Choruma-Head\ of\ QAQC\ &\ Security.jpg);background-position: center;background-size: cover;">
+            <div class="team-initial">QA</div>
+          </div>
+          <div class="team-card-photo-overlay"></div>
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Head of QAQC</div>
+          <div class="team-card-role">Quality Assurance &amp; Control</div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-1">
+        <div class="team-card-photo">
+          <div class="team-card-photo-bg team-photo-com" style="background-image: url(assets/Fatima\ Muvhazhi-Head\ of\ Plant\ and\ Manufacturing.jpg);background-position: center;background-size: cover;">
+            <div class="team-initial">HP</div>
+          </div>
+          <div class="team-card-photo-overlay"></div>
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Head of Plant</div>
+          <div class="team-card-role">Machinery Management</div>
+        </div>
+      </div>
+      <div class="team-card reveal delay-2">
+        <div class="team-card-photo">
+          <div class="team-card-photo-bg team-photo-qaqc" style="background-image: url(assets/Tawanda\ Utete-Risk\ and\ Compliance\ Manager.jpg);background-position: center;background-size: cover;">
+            <div class="team-initial">RC</div>
+          </div>
+          <div class="team-card-photo-overlay"></div>
+        </div>
+        <div class="team-card-info">
+          <div class="team-card-name">Group Risk &amp; Compliance Manager</div>
+          <div class="team-card-role">Risk Management</div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/mainlogo.png" alt="Mandfar Group">
+        <p>Mandfar Group is a specialised mining services partner delivering end-to-end solutions across the mining lifecycle across Southern Africa.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" class="social-link"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="services.html">Services</a><a href="sheq.html">SHEQ</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Divisions</h4><a href="mining.html">Contract Mining</a><a href="construction.html">Construction</a><a href="electro-mechanical.html">Electro-Mechanical</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="#">44 Longden, Belvedere, Harare</a><a href="mailto:info@mandfar.co.zw">info@mandfar.co.zw</a><a href="tel:+263787884991">+263 78 788 4991</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 Mandfar Group. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+<script src="js/canvas.js"></script><script src="js/main.js"></script>
+</body></html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mandfar Group Services — Integrated Mining Services</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+<div id="page-loader"><img src="assets/mainlogo.png" alt="Mandfar Group" class="loader-logo"><div class="loader-bar-wrap"><div class="loader-bar"></div></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo"><img src="assets/mainlogo.png" alt="Mandfar Group"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html" class="nav-active">Services</a></li>
+    <li class="nav-dropdown"><a href="#">Divisions <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+      <div class="dropdown-menu">
+        <a href="mining.html"><span class="dropdown-dot" style="background:var(--gold)"></span>Contract Mining</a>
+        <a href="construction.html"><span class="dropdown-dot" style="background:var(--orange)"></span>Construction &amp; Civils</a>
+        <a href="electro-mechanical.html"><span class="dropdown-dot" style="background:var(--blue)"></span>Electro-Mechanical</a>
+      </div>
+    </li>
+    <li><a href="sheq.html">SHEQ</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta"><a href="contact.html" class="btn-nav">Get In Touch</a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="mining.html">Contract Mining</a><a href="construction.html">Construction</a>
+  <a href="electro-mechanical.html">Electro-Mechanical</a><a href="sheq.html">SHEQ</a><a href="contact.html">Contact</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg services-hero-bg"></div>
+  <div class="page-hero-overlay"></div>
+  <canvas id="hero-canvas"></canvas>
+  <div class="page-hero-content">
+    <div class="page-hero-breadcrumb">Home <span>Services</span></div>
+    <h1>Our <span style="color:var(--green)">Services</span></h1>
+    <p class="page-hero-sub">Three integrated service lines delivering end-to-end solutions across the mining and infrastructure lifecycle.</p>
+  </div>
+</div>
+
+<!-- Intro -->
+<section class="section" style="background:var(--dark-2);">
+  <div class="section-inner" style="text-align:center;max-width:800px;">
+    <p class="section-label reveal" style="justify-content:center;">Integrated Solutions</p>
+    <h2 class="section-title reveal delay-1">We Deliver High-Impact Projects Across <span class="accent">Gold, Lithium, Chrome, Energy</span> &amp; Infrastructure</h2>
+    <p class="section-sub reveal delay-2" style="max-width:100%;margin-top:20px;">With an uncompromising commitment to safety, quality, and operational excellence, Mandfar Group brings together the capabilities of three specialist divisions to deliver complete mining solutions.</p>
+  </div>
+</section>
+
+<!-- Service 1: Mining -->
+<section class="section" style="background:var(--dark);">
+  <div class="section-inner">
+    <div class="service-detail-card reveal">
+      <div class="service-detail-header">
+        <div class="service-detail-img">
+          <div class="service-detail-img-bg mining-bg-1"></div>
+          <div class="service-detail-img-overlay" style="background:linear-gradient(to right,transparent 60%,rgba(10,26,32,1));"></div>
+          <div style="position:absolute;top:32px;left:32px;z-index:2;">
+            <img src="assets/mining.png" style="height:32px;filter:brightness(0) invert(1);opacity:.9;">
+          </div>
+          <div style="position:absolute;bottom:32px;left:32px;z-index:2;">
+            <div style="font-size:4rem;font-weight:900;letter-spacing:-.05em;color:rgba(245,166,35,.15);line-height:1;">01</div>
+          </div>
+        </div>
+        <div class="service-detail-content">
+          <p class="section-label" style="color:var(--gold);">01 — Contract Mining</p>
+          <h2 style="color:var(--white);">Open-Cast Mining Operations</h2>
+          <p>Mandfar Mining delivers comprehensive contract mining services across gold, lithium, chrome and other critical minerals — from initial site establishment to full-scale production and ongoing operations management.</p>
+          <div class="service-capabilities">
+            <div class="capability-item">Open-cast contract mining</div>
+            <div class="capability-item">Load &amp; haul operations</div>
+            <div class="capability-item">Drilling &amp; blasting</div>
+            <div class="capability-item">Ore handling &amp; stockpiling</div>
+            <div class="capability-item">Mine site preparation</div>
+            <div class="capability-item">Mine planning &amp; scheduling</div>
+          </div>
+          <div style="margin-top:28px;">
+            <a href="mining.html" class="btn-primary">Mining Division <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 2: Construction -->
+    <div class="service-detail-card reveal delay-2">
+      <div class="service-detail-header" style="direction:rtl;">
+        <div class="service-detail-img" style="direction:ltr;">
+          <div class="service-detail-img-bg construction-bg-1"></div>
+          <div class="service-detail-img-overlay" style="background:linear-gradient(to left,transparent 60%,rgba(10,26,32,1));"></div>
+          <div style="position:absolute;top:32px;right:32px;z-index:2;">
+            <img src="assets/construction_logo.png" style="height:32px;filter:brightness(0) invert(1);opacity:.9;">
+          </div>
+          <div style="position:absolute;bottom:32px;right:32px;z-index:2;text-align:right;">
+            <div style="font-size:4rem;font-weight:900;letter-spacing:-.05em;color:rgba(224,99,37,.15);line-height:1;">02</div>
+          </div>
+        </div>
+        <div class="service-detail-content" style="direction:ltr;">
+          <p class="section-label" style="color:var(--orange);">02 — Construction &amp; Civils</p>
+          <h2>Mining &amp; Infrastructure Development</h2>
+          <p>Mandfar Construction delivers mining and infrastructure development across the full spectrum — from mine access roads and bulk earthworks to national road construction and industrial platform development.</p>
+          <div class="service-capabilities">
+            <div class="capability-item">Mine access &amp; haul roads</div>
+            <div class="capability-item">Bulk earthworks</div>
+            <div class="capability-item">Road construction &amp; surfacing</div>
+            <div class="capability-item">Drainage &amp; concrete works</div>
+            <div class="capability-item">Industrial platforms</div>
+            <div class="capability-item">Land servicing</div>
+          </div>
+          <div style="margin-top:28px;">
+            <a href="construction.html" class="btn-primary">Construction Division <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 3: Electro -->
+    <div class="service-detail-card reveal delay-3">
+      <div class="service-detail-header">
+        <div class="service-detail-img">
+          <div class="service-detail-img-bg electro-bg-1"></div>
+          <div class="service-detail-img-overlay" style="background:linear-gradient(to right,transparent 60%,rgba(10,26,32,1));"></div>
+          <div style="position:absolute;top:32px;left:32px;z-index:2;">
+            <img src="assets/electro-mechanical_logo.png" style="height:32px;filter:brightness(0) invert(1);opacity:.9;">
+          </div>
+          <div style="position:absolute;bottom:32px;left:32px;z-index:2;">
+            <div style="font-size:4rem;font-weight:900;letter-spacing:-.05em;color:rgba(0,153,214,.15);line-height:1;">03</div>
+          </div>
+        </div>
+        <div class="service-detail-content">
+          <p class="section-label" style="color:var(--blue);">03 — Electro-Mechanical &amp; Energy</p>
+          <h2>Specialist Engineering &amp; Power Solutions</h2>
+          <p>Mandfar Electro delivers specialist engineering and power solutions including solar PV plants, substations, electro-mechanical installations, piling, and heavy plant hire — powering Africa's mining operations.</p>
+          <div class="service-capabilities">
+            <div class="capability-item">Electro-mechanical installations</div>
+            <div class="capability-item">Solar PV plants</div>
+            <div class="capability-item">Substations &amp; transmission</div>
+            <div class="capability-item">Piling &amp; geotechnical</div>
+            <div class="capability-item">Precast concrete</div>
+            <div class="capability-item">Heavy plant hire</div>
+          </div>
+          <div style="margin-top:28px;">
+            <a href="electro-mechanical.html" class="btn-primary">Electro Division <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section" style="background:linear-gradient(135deg,var(--teal) 0%,#011208 50%,var(--dark) 100%);position:relative;overflow:hidden;">
+  <div class="section-inner" style="text-align:center;max-width:700px;">
+    <p class="section-label reveal" style="justify-content:center;">Ready to Start?</p>
+    <h2 class="section-title reveal delay-1">Partner With <span class="accent">Mandfar</span> Group</h2>
+    <p class="section-sub reveal delay-2" style="max-width:100%;margin:16px auto 40px;">Discuss your project requirements with our team and discover how Mandfar Group can deliver reliable, scalable, and compliant mining solutions.</p>
+    <div class="reveal delay-3" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="contact.html" class="btn-primary">Get In Touch <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="about.html" class="btn-outline">About Our Group</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="assets/mainlogo.png" alt="Mandfar Group"><p>Mandfar Group — Delivering integrated mining solutions across Southern Africa.</p></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="services.html">Services</a><a href="sheq.html">SHEQ</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Divisions</h4><a href="mining.html">Contract Mining</a><a href="construction.html">Construction</a><a href="electro-mechanical.html">Electro-Mechanical</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="#">44 Longden, Belvedere, Harare</a><a href="mailto:info@mandfar.co.zw">info@mandfar.co.zw</a><a href="tel:+263787884991">+263 78 788 4991</a></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2025 Mandfar Group. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="js/canvas.js"></script><script src="js/main.js"></script>
+<style>@media(max-width:900px){.service-detail-header{grid-template-columns:1fr !important;direction:ltr !important;}}</style>
+</body></html>

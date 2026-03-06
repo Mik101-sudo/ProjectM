@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mandfar Construction — Mining Infrastructure &amp; Civil Engineering</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+.cimg1{background:radial-gradient(ellipse at 40% 30%,rgba(224,99,37,.3) 0%,transparent 40%),linear-gradient(145deg,#1a0800,#3d1500,#0d1020);}
+.cimg2{background:radial-gradient(ellipse at 60% 50%,rgba(0,59,73,.4) 0%,transparent 50%),linear-gradient(145deg,#020810,#051520);}
+.cimg3{background:radial-gradient(ellipse at 30% 60%,rgba(224,99,37,.2) 0%,transparent 40%),linear-gradient(145deg,#1a0500,#2a0d00);}
+.cimg4{background:radial-gradient(ellipse at 70% 40%,rgba(0,175,102,.15) 0%,transparent 50%),linear-gradient(145deg,#030810,#051a10);}
+.cimg5{background:radial-gradient(ellipse at 50% 50%,rgba(224,99,37,.15) 0%,transparent 50%),linear-gradient(145deg,#100500,#200a00);}
+</style>
+</head>
+<body>
+<div id="page-loader"><img src="assets/construction.png" alt="Mandfar Group" class="loader-logo"><div class="loader-bar-wrap"><div class="loader-bar"></div></div></div>
+<div id="cursor"></div><div id="cursor-follower"></div>
+<nav id="navbar">
+  <a href="index.html" class="nav-logo"><img src="assets/construction.png" alt="Mandfar Group"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li>
+    <li class="nav-dropdown"><a href="#">Divisions <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6l4 4 4-4"/></svg></a>
+      <div class="dropdown-menu">
+        <a href="mining.html"><span class="dropdown-dot" style="background:var(--gold)"></span>Contract Mining</a>
+        <a href="construction.html"><span class="dropdown-dot" style="background:var(--orange)"></span>Construction &amp; Civils</a>
+        <a href="electro-mechanical.html"><span class="dropdown-dot" style="background:var(--blue)"></span>Electro-Mechanical</a>
+      </div>
+    </li>
+    <li><a href="sheq.html">SHEQ</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta"><a href="contact.html" class="btn-nav">Get In Touch</a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+  <a href="mining.html">Contract Mining</a><a href="construction.html">Construction</a>
+  <a href="electro-mechanical.html">Electro-Mechanical</a><a href="sheq.html">SHEQ</a><a href="contact.html">Contact</a>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-bg subco-hero-construction"><img src="assets/construction-site-night.jpg" alt="Construction Site"></div>
+  <div class="page-hero-overlay"></div>
+  <canvas id="hero-canvas"></canvas>
+  <div class="page-hero-content">
+    <h1>Construction<br><span style="color:var(--orange)">& Civils</span></h1>
+    <p class="page-hero-sub">Mining and infrastructure development built to the highest standards of quality and durability.</p>
+  </div>
+</div>
+
+<section class="section" style="background:var(--dark-2);">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;" class="responsive-grid">
+      <div>
+        <p class="section-label reveal" style="color:var(--orange);">Construction &amp; Civils</p>
+        <h2 class="section-title reveal delay-1">Building <span style="color:var(--orange);">Infrastructure</span> That Endures</h2>
+        <p class="section-sub reveal delay-2" style="max-width:100%;">Mandfar Construction delivers mining and infrastructure development projects with precision engineering and quality craftsmanship that stands the test of time.</p>
+        <p style="font-size:.9rem;font-weight:300;color:rgba(255,255,255,.55);line-height:1.8;margin-top:16px;" class="reveal delay-3">From mine access roads and bulk earthworks to national road construction, we bring the same commitment to excellence to every project we undertake across Southern Africa.</p>
+        <div style="display:flex;gap:32px;margin-top:40px;flex-wrap:wrap;" class="reveal delay-4">
+          <div><div style="font-size:2rem;font-weight:900;color:var(--orange);" data-counter data-target="80" data-suffix="+">80+</div><div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.45);margin-top:4px;">Projects Completed</div></div>
+          <div><div style="font-size:2rem;font-weight:900;color:var(--orange);" data-counter data-target="500" data-suffix="km">500km</div><div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.45);margin-top:4px;">Roads Constructed</div></div>
+          <div><div style="font-size:2rem;font-weight:900;color:var(--orange);" data-counter data-target="150" data-suffix="+">150+</div><div style="font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(255,255,255,.45);margin-top:4px;">Civil Personnel</div></div>
+        </div>
+      </div>
+      <div style="position:relative;border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:4/3;" class="reveal-right">
+        <div style="position:absolute;inset:0;" class="cimg1"><img src="assets/vertical-shot-asphalt-road-blue-sky.jpg" alt="road"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.4) 0%,transparent 60%);"></div>
+        <div style="position:absolute;bottom:24px;left:24px;z-index:2;">
+          <div style="font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--orange);margin-bottom:8px;">Built For The Long Haul</div>
+          <div style="font-size:1.2rem;font-weight:700;">Infrastructure Excellence</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark);">
+  <div class="section-inner">
+    <p class="section-label reveal">Our Capabilities</p>
+    <h2 class="section-title reveal delay-1">Construction <span class="accent">Services</span></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin-top:48px;">
+      <div class="value-card reveal delay-1" style="border-color:rgba(224,99,37,.15);">
+        <div class="value-icon" style="background:rgba(224,99,37,.1);"><i class="fa-solid fa-road" style="color: rgb(255, 94, 0);"></i></div>
+        <div class="value-title">Mine Access &amp; Haul Roads</div>
+        <p class="value-desc">Design and construction of engineered mine access roads and haul roads built to withstand heavy equipment loads in demanding conditions.</p>
+      </div>
+      <div class="value-card reveal delay-2" style="border-color:rgba(224,99,37,.15);">
+        <div class="value-icon" style="background:rgba(224,99,37,.1);"><i class="fa-solid fa-mountain" style="color: rgb(255, 94, 0);"></i></div>
+        <div class="value-title">Bulk Earthworks &amp; Excavation</div>
+        <p class="value-desc">Large-scale earthmoving operations for site preparation, levelling, cut and fill, and foundation works for all types of infrastructure.</p>
+      </div>
+      <div class="value-card reveal delay-3" style="border-color:rgba(224,99,37,.15);">
+        <div class="value-icon" style="background:rgba(224,99,37,.1);"><i class="fa-solid fa-road" style="color: rgb(255, 94, 0);"></i></div>
+        <div class="value-title">Road Construction &amp; Surfacing</div>
+        <p class="value-desc">National and industrial road construction including base course preparation, gravel surfacing, and bitumen surfacing to government standards.</p>
+      </div>
+      <div class="value-card reveal delay-4" style="border-color:rgba(224,99,37,.15);">
+        <div class="value-icon" style="background:rgba(224,99,37,.1);"><i class="fa-solid fa-water" style="color: rgb(255, 94, 0);"></i></div>
+        <div class="value-title">Drainage &amp; Concrete Works</div>
+        <p class="value-desc">Stormwater drainage design and construction, culverts, bridges, concrete structures, and civil engineering works of all scales.</p>
+      </div>
+      <div class="value-card reveal delay-1" style="border-color:rgba(224,99,37,.15);">
+        <div class="value-icon" style="background:rgba(224,99,37,.1);"><i class="fa-solid fa-industry" style="color: rgb(255, 94, 0);"></i></div>
+        <div class="value-title">Industrial Platforms</div>
+        <p class="value-desc">Construction of industrial hardstands, processing plant pads, workshop facilities, and logistics platforms for mining operations.</p>
+      </div>
+      <div class="value-card reveal delay-2" style="border-color:rgba(224,99,37,.15);">
+        <div class="value-icon" style="background:rgba(224,99,37,.1);"><i class="fa-solid fa-globe-africa" style="color: rgb(255, 94, 0);"></i></div>
+        <div class="value-title">Land Servicing &amp; Development</div>
+        <p class="value-desc">Comprehensive land development services including clearing, grubbing, land forming, and preparation for industrial use.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark-2);">
+  <div class="section-inner">
+    <p class="section-label reveal">Our Workforce</p>
+    <h2 class="section-title reveal delay-1">Skilled Teams, <span class="accent">Proven Results</span></h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:auto auto;gap:16px;margin-top:48px;" class="workers-grid">
+      <div style="grid-row:1/3;aspect-ratio:2/3;border-radius:var(--radius);overflow:hidden;position:relative;" class="reveal-left">
+        <div style="position:absolute;inset:0;" class="cimg1"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6) 0%,transparent 50%);"></div>
+        <div style="position:absolute;bottom:20px;left:20px;right:20px;font-size:.78rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--white);">Lead Engineer on Site<br><span style="color:rgba(255,255,255,.5);font-weight:300;">Quality Assured</span></div>
+      </div>
+      <div style="aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;" class="reveal delay-1">
+        <div style="position:absolute;inset:0;" class="cimg2"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 60%);"></div>
+        <div style="position:absolute;bottom:16px;left:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--white);">Earthworks Operations</div>
+      </div>
+      <div style="aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;" class="reveal delay-2">
+        <div style="position:absolute;inset:0;" class="cimg3"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 60%);"></div>
+        <div style="position:absolute;bottom:16px;left:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--white);">Road Construction</div>
+      </div>
+      <div style="aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;" class="reveal delay-3">
+        <div style="position:absolute;inset:0;" class="cimg4"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 60%);"></div>
+        <div style="position:absolute;bottom:16px;left:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--white);">Concrete Works</div>
+      </div>
+      <div style="aspect-ratio:4/3;border-radius:var(--radius);overflow:hidden;position:relative;" class="reveal delay-4">
+        <div style="position:absolute;inset:0;" class="cimg5"></div>
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.5) 0%,transparent 60%);"></div>
+        <div style="position:absolute;bottom:16px;left:16px;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--white);">Site Preparation</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--dark);">
+  <div class="section-inner">
+    <p class="section-label reveal">What We've Built</p>
+    <h2 class="section-title reveal delay-1">Featured <span class="accent">Projects</span></h2>
+    <div class="projects-grid">
+      <div class="project-card reveal delay-1">
+        <div class="project-card-bg cimg1"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-content">
+          <div class="project-tag" style="background:rgba(224,99,37,.2);border-color:rgba(224,99,37,.4);color:var(--orange);">Road Infrastructure</div>
+          <div class="project-title">National Road Rehabilitation — 120km</div>
+          <div class="project-location">📍 Mashonaland Central, Zimbabwe</div>
+        </div>
+      </div>
+      <div class="project-card reveal delay-2">
+        <div class="project-card-bg cimg3"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-content">
+          <div class="project-tag" style="background:rgba(224,99,37,.2);border-color:rgba(224,99,37,.4);color:var(--orange);">Mine Infrastructure</div>
+          <div class="project-title">Mine Access Road &amp; Haul Corridor</div>
+          <div class="project-location">📍 Midlands Province, Zimbabwe</div>
+        </div>
+      </div>
+      <div class="project-card reveal delay-3">
+        <div class="project-card-bg cimg2"></div>
+        <div class="project-card-overlay"></div>
+        <div class="project-card-content">
+          <div class="project-tag" style="background:rgba(224,99,37,.2);border-color:rgba(224,99,37,.4);color:var(--orange);">Industrial Platform</div>
+          <div class="project-title">Processing Plant Pad &amp; Hardstand</div>
+          <div class="project-location">📍 Harare Metropolitan, Zimbabwe</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand"><img src="assets/construction.png" alt="Mandfar Group"><p>Mandfar Group — Delivering integrated mining solutions across Southern Africa.</p></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="services.html">Services</a><a href="sheq.html">SHEQ</a><a href="contact.html">Contact</a></div>
+      <div class="footer-col"><h4>Divisions</h4><a href="mining.html">Contract Mining</a><a href="construction.html">Construction</a><a href="electro-mechanical.html">Electro-Mechanical</a></div>
+      <div class="footer-col"><h4>Contact</h4><a href="#">44 Longden, Belvedere, Harare</a><a href="mailto:info@mandfar.co.zw">info@mandfar.co.zw</a><a href="tel:+263787884991">+263 78 788 4991</a></div>
+    </div>
+    <div class="footer-bottom"><p class="footer-copy">© 2025 Mandfar Group. All rights reserved.</p></div>
+  </div>
+</footer>
+<script src="js/canvas.js"></script><script src="js/main.js"></script>
+<style>@media(max-width:900px){.responsive-grid,.workers-grid{grid-template-columns:1fr !important;} .workers-grid > div[style*="grid-row"]{grid-row:auto !important;aspect-ratio:4/3 !important;}}</style>
+</body></html>
