@@ -224,7 +224,7 @@ body.cursor-hover #cursor-follower{width:60px;height:60px;border-color:var(--gre
 .partners-track-wrap::before,.partners-track-wrap::after{content:'';position:absolute;top:0;bottom:0;width:120px;z-index:2;}
 .partners-track-wrap::before{left:0;background:linear-gradient(to right,var(--dark),transparent);}
 .partners-track-wrap::after{right:0;background:linear-gradient(to left,var(--dark),transparent);}
-.partners-track{display:flex;gap:48px;animation:partnerScroll 30s linear infinite;width:max-content;}
+.partners-track{display:flex;gap:48px;animation:partnerScroll 50s linear infinite;width:max-content;}
 .partners-track:hover{animation-play-state:paused;}
 .partner-placeholder{height:48px;display:flex;align-items:center;padding:0 24px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:10px;font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.3);white-space:nowrap;flex-shrink:0;transition:background .3s,color .3s,border-color .3s;}
 .partner-placeholder:hover{background:rgba(0,175,102,.08);color:rgba(255,255,255,.6);border-color:rgba(0,175,102,.2);}
