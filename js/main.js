@@ -109,8 +109,7 @@ document.querySelectorAll('[data-counter]').forEach(el => counterObserver.observ
 // ── Partners Track Cloning ────────────────────
 const track = document.querySelector('.partners-track');
 if (track) {
-  const clone = track.cloneNode(true);
-  track.parentNode.appendChild(clone);
+  track.innerHTML = track.innerHTML + track.innerHTML;;
 }
 
 // ── Services Tabs ─────────────────────────────
