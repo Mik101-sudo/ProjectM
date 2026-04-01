@@ -28,7 +28,7 @@
   --teal:#003B49;--teal-light:#005266;
   --dark:#050D10;--dark-2:#0A1A20;--dark-3:#0F2530;
   --white:#FFFFFF;--off-white:#EEF4F2;
-  --gray:#8AA4AC;--gray-light:#BDD0D5;
+  --gray:#8AA4AC;--gray-light:#e0e7e9;
   --gold:#F5A623;--orange:#E06325;--blue:#0099D6;
   --border-color:rgba(0,175,102,0.18);--border-dim:rgba(255,255,255,0.07);
   --nav-h:80px;--pad-x:clamp(20px,5vw,80px);--section-gap:clamp(80px,10vw,140px);
