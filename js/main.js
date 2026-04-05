@@ -10,17 +10,6 @@ window.addEventListener('load', () => {
   }, 1800);
 });
 
-
-  (function () {
-    var i = 0;
-    var track = document.getElementById("cwt");
-    var total = track.children.length;
-    setInterval(function () {
-      i = (i + 1) % total;
-      track.style.transform = "translateY(-" + (i * 1) + "em)";
-    }, 2000);
-  })();
-
 // ── Custom Cursor ─────────────────────────────
 const cursor = document.getElementById('cursor');
 const follower = document.getElementById('cursor-follower');
@@ -198,3 +187,13 @@ document.querySelectorAll('.division-card, .project-card, .team-card').forEach(c
     card.style.transform = '';
   });
 });
+
+  (function () {
+    var i = 0;
+    var track = document.getElementById("cwt");
+    var total = track.children.length;
+    setInterval(function () {
+      i = (i + 1) % total;
+      track.style.transform = "translateY(-" + (i * 1) + "em)";
+    }, 2000);
+  })();
